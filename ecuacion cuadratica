@@ -1,0 +1,41 @@
+// e.cpp : Defines the entry point for the console application.
+//Nombre: Belen Pierola Arias
+//Fecha:29/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+
+{
+double a,b,c,d,x1,x2;
+
+	cout<<"Ingrese el valor de a:  ";
+	cin>>a;
+	cout<<"Ingrese el valor de b:  ";
+	cin>>b;
+	cout<<"Ingrese el valor de c:  ";
+	cin>>c;	
+	d=pow(b,2)-(4*a*c);
+	if(d<0)
+	{ 
+	cout<<"La raiz es compleja";
+	}
+	else
+	{
+	if(d>0);
+	{
+    cout<<"La raiz no es compleja";
+     }
+}
+x1=-b+(sqrt(pow(b,2))-(4*a*c))/2*a;
+x2=-b-(sqrt(pow(b,2))-(4*a*c))/2*a;
+cout<<"El discriminante:  "<<d<<endl;
+cout<<"El valor de x1:  "<<x1<<endl;
+cout<<"El valor de x2:  "<<x2<<endl;
+
+	getch();
+}
