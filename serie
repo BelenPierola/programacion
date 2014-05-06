@@ -1,0 +1,34 @@
+// k.cpp : Defines the entry point for the console application.
+// Autor: Belen Pierola Arias
+// Fecha: 06/05/14
+
+
+#include "stdafx.h"
+#include <iostream> 
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+
+{
+float n,x,s,i,p,si;
+cout<<"Ingrese el valor de n:  ";
+cin>>n;
+cout<<"Ingrese el valor de x:  ";
+cin>>x;
+
+si=1;
+p=1;
+s=5;
+for(i=0; i<=n; i++)
+{
+	p=p*(i+1);
+	s=s+si*(pow(x,i))/p;
+	si=si*-1;
+}
+cout<<"La suma es:  "<<s;
+
+
+getch();
+}
