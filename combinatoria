@@ -1,0 +1,42 @@
+// 1.cpp : Defines the entry point for the console application.
+//Autor: Belen Pierola Arias
+//Fecha: 13/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int factorial(int numero);
+float combi(int n, int r);
+
+void main()
+{
+int n,r;
+int total;
+
+cout<<"Introduce el valor de r:   ";
+cin>>r;
+cout<<"introduce el valor de n:   ";
+cin>>n;
+total=combi(n,r);
+}
+
+int factorial(int numero)
+{
+	int fac; 
+	fac=1;
+	for(int i=1;i<numero+1;i++)
+	(fac=fac*i);
+
+return (fac);
+}
+
+float combi(int n,int r)
+{
+	int total;
+	total=factorial(n)/(factorial(r)*(factorial(n-r)));
+
+return(total);
+}
