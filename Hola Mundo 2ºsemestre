@@ -1,0 +1,25 @@
+// HOLAMUNDO.cpp : Defines the entry point for the console application.
+//Nombre: Belen Pierola Arias
+//Fecha:21/08/2014
+//Nombre del programa: Hola Mundo
+
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+
+{
+    int edad;
+	cout<<"Ingrese su edad:   ";
+	cin>>edad;
+	cout<<"Su edad es:    ";
+	cout<< edad;
+   getch();
+	
+}
+
